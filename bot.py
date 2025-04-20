@@ -35,7 +35,7 @@ def create_hieroglyph_image(text, user_id):
     return filepath
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("مرحبًا بك في بوت الهيروغليفية! أرسل لي اسمك بالعربية وسأحوله إلى رموز هيروغليفية مع صورة.")
+    await update.message.reply_text("مرحبًا بك في بوت الهيروغليفية الفرعوني!أرسل لي اسمك باللغة العربية، وسأقوم بتحويله إلى رموز هيروغليفية قديمة وسأرسل لك صورة تحتوي على الاسم مرسومًا.")
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     uid = update.effective_user.id
